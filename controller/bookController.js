@@ -33,7 +33,7 @@ const createBook = asyncHandler(async (req, res) => {
       status: {
         success: false,
         code: 400,
-        message: "Failed validation data",
+        message: "Failed validation data!",
       },
       error: error.details[0].message,
     });
@@ -69,7 +69,7 @@ const updateBookById = asyncHandler(async (req, res) => {
       status: {
         success: false,
         code: 400,
-        message: "Failed validation data",
+        message: "Failed validation data!",
       },
       error: error.details[0].message,
     });

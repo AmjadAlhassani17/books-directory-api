@@ -9,6 +9,8 @@ app.use(express.json());
 app.use(logger);
 
 app.use('/api/books' , require("./routes/books"));
+app.use('/api/auth' , require("./routes/auth"));
+app.use('/api/user' , require("./routes/user"));
 
 app.use(notFound);
 app.use(errorHandler);
